@@ -1,6 +1,6 @@
 ## Ex02 - Subject
 
-Etat d'un composant: rendu conditionnel
+Etat d'un composant: rendu conditionnel 2
 
 ### Sujet
 

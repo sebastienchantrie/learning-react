@@ -1,9 +1,13 @@
 import React from 'react';
 import Ex04 from './Ex04';
 
-const wrapper = shallow(<Ex04 />);
-
 describe("Ex04 (Propriété d'un composant)", () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<Ex04/>);
+  });
+
   /*it('match the snapshot', () => {
     const wrapper = renderer.create(<Ex02 />).toJSON();
     expect(wrapper).toMatchSnapshot();

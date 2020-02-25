@@ -1,21 +1,31 @@
 import React from 'react';
-import Ex03 from './Ex03';
+import { shallow, mount, render } from 'enzyme';
+import Ex03, { Ex03Text } from './Ex03';
 
-const wrapper = shallow(<Ex03 />);
+describe('Ex03 (Propriété d\'un composant)', () => {
 
-describe("Ex03 (Propriété d'un composant)", () => {
   /*it('match the snapshot', () => {
     const wrapper = renderer.create(<Ex02 />).toJSON();
     expect(wrapper).toMatchSnapshot();
   });*/
 
-  it('Le texte de base est bien affiché', () => {
-    expect(wrapper.find('p').html()).toContain('Il y a eu 0 clic(s)');
+  it('Le composant Ex03Text esy bien affiché', () => {
+    const wrapper = shallow(<Ex03/>);
+    expect(wrapper.children().find('Ex03Text'));
   });
 
-  it('Au clic sur le bouton, le texte est correctement changer', () => {
-    expect(wrapper.find('p').html()).toContain('Il y a eu 0 clic(s)');
-    wrapper.find('button').simulate('click');
-    expect(wrapper.find('p').html()).toContain('Il y a eu 1 clic(s)');
+  it('Le texte de base est bien affiché', () => {
+    const wrapper = shallow(<Ex03Text count={0}/>);
+    expect(wrapper.find('p').text()).toContain('Il n\'y a pas encore eu de clic.');
+  });
+
+  it('Affichage correct pour un clic', () => {
+    const wrapper = shallow(<Ex03Text count={1}/>);
+    expect(wrapper.find('p').text()).toContain('Il y a eu 1 clic');
+  });
+
+  it('Affichage correct pour plus d\'un clic', () => {
+    const wrapper = shallow(<Ex03Text count={2}/>);
+    expect(wrapper.find('p').text()).toContain('Il y a eu 2 clic');
   });
 });
