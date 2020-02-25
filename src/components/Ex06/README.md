@@ -6,7 +6,7 @@ State & Liste
 
 ```
 Créer un composant `List`, qui prend en propriété `data` une tableau de nombre.
-Une renvoie une liste (ul) avec la valeur de chaque élément.
+Une renvoie une liste (ul) avec la valeur de chaque élément. Lors d'un clique sur une ligne, elle est supprimé.
 Par default la liste contient les donnés suivant:
 Créer un bouton: "générer", qui va ajouter un nombre à la liste de donnée. Le nombre ajouté est le nombre de click qu'il y a eu sur le bouton.
 
