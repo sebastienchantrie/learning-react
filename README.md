@@ -8,4 +8,5 @@
    - Ex03: Propriété d'un composant [lien](src/components/Ex03/README.md)
    - Ex04: Liste de données [lien](src/components/Ex04/README.md)
    - Ex05: Liste avancé de données [lien](src/components/Ex05/README.md)
-   - Ex06: Liste dynamique [lien](src/components/Ex06/README.md)
+   - Ex07: State & Liste [lien](src/components/Ex06/README.md)
+   - Ex07: Liste dynamique [lien](src/components/Ex07/README.md)

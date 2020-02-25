@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import Ex03, { Ex03Text } from './Ex03';
+import Ex03, { Ex03Text } from '../Ex03.jsx';
 
 describe('Ex03 (Propriété d\'un composant)', () => {
 
-  /*it('match the snapshot', () => {
-    const wrapper = renderer.create(<Ex02 />).toJSON();
+  it('Match the snapshot', () => {
+    const wrapper = renderer.create(<Ex03 />).toJSON();
     expect(wrapper).toMatchSnapshot();
-  });*/
+  });
 
   it('Le composant Ex03Text esy bien affiché', () => {
     const wrapper = shallow(<Ex03/>);
