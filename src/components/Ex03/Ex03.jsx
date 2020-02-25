@@ -20,14 +20,16 @@ function Ex03() {
     <div className="ex03">
       <h1>Ex03 - Propriété d'un composant</h1>
 
-      <button onClick={() => setClick(click + 1)}>Compter</button>
-      <Ex03Text count={click}/>
+      <code className={'res'}>
+        <button onClick={() => setClick(click + 1)}>Compter</button>
+        <Ex03Text count={click}/>
+      </code>
     </div>
   );
 }
 
 
 export {
-  Ex03Text
+  Ex03Text,
 };
 export default Ex03;

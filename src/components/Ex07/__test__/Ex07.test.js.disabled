@@ -1,0 +1,12 @@
+import React from 'react';
+import { shallow, mount, render } from 'enzyme';
+import Ex07 from './Ex07.jsx';
+
+const wrapper = render(<Ex07 />);
+
+describe('Ex07 (Liste, tableaux et propriétés)', () => {
+  it('Match the snapshot', () => {
+    const wrapper = renderer.create(<Ex07/>).toJSON();
+    expect(wrapper).toMatchSnapshot();
+  });
+});

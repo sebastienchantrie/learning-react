@@ -1,0 +1,45 @@
+import React from 'react';
+import { shallow, mount, render } from 'enzyme';
+import Ex06 from '../Ex06.jsx';
+
+describe('Ex06 (State & Liste)', () => {
+  let wrapper;
+  let data;
+  let quantity;
+
+  beforeEach(() => {
+    data = [];
+    quantity = 5 + Math.ceil(Math.random() * 10);
+    let i = quantity;
+    while (i--) {
+      data.push(Math.ceil(Math.random() * 42));
+    }
+    wrapper = shallow(<Ex06 data={data}/>);
+  });
+
+  it('Match the snapshot', () => {
+    const wrapper = renderer.create(<Ex06/>).toJSON();
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('Une liste est affiché', () => {
+    expect(wrapper.find('ul'));
+  });
+
+  it('Le bon nombre de donnée est affiché', () => {
+    expect(wrapper.find('li')).toHaveLength(quantity);
+  });
+
+  it('Au clic sur le bouton, une donnée s\'ajoute', () => {
+    console.log('wrapper.find(\'li\')', wrapper.find('li').length);
+    console.log(wrapper.find('button').simulate('click'));
+    console.log('wrapper.find(\'li\')', wrapper.find('li').length);
+    wrapper.find('li').forEach((data) => console.log('data', data.html()));
+    expect(wrapper.find('li')).toHaveLength(quantity + 1);
+    expect(wrapper.find('li').last()).toBe(1);
+    button.simulate('click');
+    expect(wrapper.find('li')).toHaveLength(quantity + 2);
+    expect(wrapper.find('li').last()).toBe(2);
+
+  });
+});
