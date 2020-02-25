@@ -1,12 +1,12 @@
-import Home from '../components/Home/Home';
+import Home from '../components/Home/Home.jsx';
 
-import Ex00 from '../components/Ex00/Ex00';
-import Ex01 from '../components/Ex01/Ex01';
-import Ex02 from '../components/Ex02/Ex02';
-import Ex03 from '../components/Ex03/Ex03';
-import Ex04 from '../components/Ex04/Ex04';
-import Ex05 from '../components/Ex05/Ex05';
-import Ex06 from '../components/Ex06/Ex06';
+import Ex00 from '../components/Ex00/Ex00.jsx';
+import Ex01 from '../components/Ex01/Ex01.jsx';
+import Ex02 from '../components/Ex02/Ex02.jsx';
+import Ex03 from '../components/Ex03/Ex03.jsx';
+import Ex04 from '../components/Ex04/Ex04.jsx';
+import Ex05 from '../components/Ex05/Ex05.jsx';
+import Ex06 from '../components/Ex06/Ex06.jsx';
 
 const routes = [
   {

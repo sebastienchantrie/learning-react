@@ -1,6 +1,6 @@
 ## Ex04 - Subject
 
-Listes
+Liste de données
 
 ### Sujet
 
