@@ -7,7 +7,7 @@ function Ex04({ data }) {
       <h1>Ex04 - Propriété d'un composant</h1>
 
       <ul>
-        {data.map((val, index) => <li key={index}>{val}</li>)}
+        valeur
       </ul>
     </div>
   );

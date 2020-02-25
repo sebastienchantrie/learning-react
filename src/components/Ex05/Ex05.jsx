@@ -15,13 +15,11 @@ function Ex05({ data }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((val) => (
-            <tr key={val.id}>
-              <td>{val.id}</td>
-              <td>{val.count}</td>
-              <td>{val.alive}</td>
-            </tr>
-          ))}
+          <tr>
+            <td>id</td>
+            <td>count</td>
+            <td>alive</td>
+          </tr>
         </tbody>
       </table>
     </div>
