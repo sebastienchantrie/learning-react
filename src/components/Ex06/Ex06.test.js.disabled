@@ -1,0 +1,7 @@
+import React from 'react';
+import Ex06 from './Ex06';
+
+const wrapper = render(<Ex06 />);
+
+describe('Ex06 (Liste, tableaux et propriétés)', () => {
+});
