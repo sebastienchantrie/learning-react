@@ -1,11 +1,15 @@
-## Ex07 - Subject
+## Ex06 - Subject
 
-Liste, tableaux et propriétés
+State & Liste
 
 ### Sujet
 
 ```
-Créer un composant `List`, qui prend en propriété `data` une tableau d'object.
-Afficher les informations de chaque élément de la liste dans un table (table, etc).
-Le tableau affichera toutes les données de chaque éléments reçu. Le nom de la colonne est le nom de la propriété.
+Créer un composant `List`, qui prend en propriété `data` une tableau de nombre.
+Une renvoie une liste (ul) avec la valeur de chaque élément. Lors d'un clique sur une ligne, elle est supprimé.
+Par default la liste contient les donnés suivant:
+Créer un bouton: "générer", qui va ajouter un nombre à la liste de donnée. Le nombre ajouté est le nombre de click qu'il y a eu sur le bouton.
+
+Le tableau recu prendra la forme suivante:
+const data = [13, 420, 42, 7, 4, 8, 3, 17, 30, -1, 0];
 ```
