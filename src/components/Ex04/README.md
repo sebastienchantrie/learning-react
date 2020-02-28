@@ -5,9 +5,9 @@ Liste de données
 ### Sujet
 
 ```
-Créer un composant `List`, qui prend en propriété `data` une tableau de nombre.
-Une renvoie une liste (ul) avec la valeur de chaque élément.
+Faite en sorte que le composant `Ex04`  affiche sa propriété `data` qui est un tableau de nombre.
+Il affichera cette liste à l'aide de ul et li.
 
-Le tableau recu prendra la forme suivante:
+Le tableau recu pourra prendre la forme suivante:
 const data = [13, 420, 42, 7, 4, 8, 3, 17, 30, -1, 0];
 ```

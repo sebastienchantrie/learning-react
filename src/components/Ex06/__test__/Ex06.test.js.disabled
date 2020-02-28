@@ -17,10 +17,10 @@ describe('Ex06 (State & Liste)', () => {
     wrapper = shallow(<Ex06 data={data}/>);
   });
 
-  it('Match the snapshot', () => {
+  /*it('Match the snapshot', () => {
     const wrapper = renderer.create(<Ex06/>).toJSON();
     expect(wrapper).toMatchSnapshot();
-  });
+  });*/
 
   it('Une liste est affiché', () => {
     expect(wrapper.find('ul'));

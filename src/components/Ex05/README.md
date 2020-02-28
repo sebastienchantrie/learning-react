@@ -5,7 +5,7 @@ Liste avancé de données
 ### Sujet
 
 ```
-Créer un composant `List`, qui prend en propriété `data` une tableau d'object.
+Faite en sorte que le composant `Ex05` affiche sa propriété `data` qui est un tableau de nombre.
 Afficher les informations de chaque élément de la liste dans un table (table, etc).
 
 Le tableau recu prendra la forme suivante:

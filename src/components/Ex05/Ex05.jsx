@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Ex05({ data }) {
+/*function Ex05({ data }) {
   return (
     <div className="ex05">
       <h1>Ex05 - Liste avancé de données</h1>
@@ -28,6 +28,39 @@ function Ex05({ data }) {
       </code>
     </div>
   );
+}*/
+
+class Ex05 extends React.Component {
+  render() {
+    const data = this.props.data;
+
+    return (
+      <div className="ex05">
+        <h1>Ex05 - Liste avancé de données</h1>
+
+        <code className={'res'}>
+          <table>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Count</th>
+              <th>Alive</th>
+            </tr>
+            </thead>
+            <tbody>
+            {data.map((val) => (
+              <tr key={val.id}>
+                <td>{val.id}</td>
+                <td>{val.count}</td>
+                <td>{val.alive}</td>
+              </tr>
+            ))}
+            </tbody>
+          </table>
+        </code>
+      </div>
+    );
+  }
 }
 
 Ex05.propTypes = {
