@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ex06({ data }) {
-
+/*function Ex06({ data }) {
   return (
     <div className="ex06">
       <h1>Ex06 - State & Listes</h1>
@@ -10,13 +9,28 @@ function Ex06({ data }) {
       <code className={'res'}>
         <button>Ajouter un élément</button>
         <ul>
-          <li>
-            val
-          </li>
+          <li>value</li>
         </ul>
       </code>
     </div>
   );
+}*/
+
+class Ex06 extends React.Component {
+  render() {
+    return (
+      <div className="ex06">
+        <h1>Ex06 - State & Listes</h1>
+
+        <code className={'res'}>
+          <button>Ajouter un élément</button>
+          <ul>
+            <li>value</li>
+          </ul>
+        </code>
+      </div>
+    );
+  }
 }
 
 Ex06.propTypes = {

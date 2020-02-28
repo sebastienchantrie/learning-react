@@ -1,29 +1,60 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Ex05({ data }) {
+/*function Ex05({ data }) {
   return (
     <div className="ex05">
-      <h1>Ex05 - Listes avancés</h1>
+      <h1>Ex05 - Liste avancé de données</h1>
 
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Count</th>
-            <th>Alive</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>id</td>
-            <td>count</td>
-            <td>alive</td>
-          </tr>
-        </tbody>
-      </table>
+      <code className={'res'}>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Count</th>
+              <th>Alive</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>id</td>
+                <td>count</td>
+                <td>alive</td>
+              </tr>
+          </tbody>
+        </table>
+      </code>
     </div>
   );
+}*/
+
+class Ex05 extends React.Component {
+  render() {
+    return (
+      <div className="ex05">
+        <h1>Ex05 - Liste avancé de données</h1>
+
+        <code className={'res'}>
+          <table>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Count</th>
+              <th>Alive</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>id</td>
+              <td>count</td>
+              <td>alive</td>
+            </tr>
+            </tbody>
+          </table>
+        </code>
+      </div>
+    );
+  }
 }
 
 Ex05.propTypes = {
